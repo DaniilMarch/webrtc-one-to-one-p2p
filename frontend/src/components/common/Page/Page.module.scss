@@ -1,0 +1,9 @@
+@import 'style/_Layout.scss';
+
+.page {
+  position: absolute;
+  top: $header-height;
+  bottom: $footer-height;
+  left: 0;
+  right: 0;
+}

@@ -1,15 +1,20 @@
 const isAuthUser = user => !!user;
 const nonAuthUser = () => PATHS.login;
 
+const isNonAuthUser = user => !user;
+const authUser = () => PATHS.roomSelect;
+
 const PATHS = {
     login: '/',
     roomSelect: '/room-select',
-    room: '/room/:room-id'
+    room: '/room/:roomId'
 }
 
 const ROUTES = {
     login: {
-        path: PATHS.login
+        path: PATHS.login,
+        access: isNonAuthUser,
+        fallback: authUser,
     },
     roomSelect: {
         path: PATHS.roomSelect,
@@ -22,6 +27,5 @@ const ROUTES = {
         fallback: nonAuthUser,
     }
 }
-
 
 export default ROUTES;

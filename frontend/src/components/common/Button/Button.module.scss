@@ -1,3 +1,51 @@
-button {
-  padding: 1rem;
+@import 'style/_Theme.scss';
+
+.button {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background: $bg-main;
+  border: none;
+  box-shadow: $shadow-main;
+  border-radius: 0.25rem;
+  user-select: none;
+  font-weight: bold;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: $shadow-main-inset;
+  }
+
+  &.primary {
+    @include text-primary;
+
+    .spinner * {
+      border-color: $text-primary;
+    }
+  }
+
+  &.success {
+    @include text-success;
+
+    .spinner * {
+      border-color: $text-success;
+    }
+  }
+
+  &.danger {
+    @include text-danger;
+
+    .spinner * {
+      border-color: $text-danger;
+    }
+  }
+
+  .spinner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 0.5rem);
+  }
 }

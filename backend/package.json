@@ -11,8 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.17.1",
-    "short-id": "0.1.0-1",
+    "pem": "^1.14.4",
     "socket.io": "2.3.0",
-    "uuid": "8.3.0"
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

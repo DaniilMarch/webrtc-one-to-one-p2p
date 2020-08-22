@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:1.19.2-alpine
 
 RUN apk add nodejs npm
 

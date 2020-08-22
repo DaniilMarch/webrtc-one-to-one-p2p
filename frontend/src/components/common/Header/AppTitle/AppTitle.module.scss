@@ -1,0 +1,6 @@
+@import 'style/_Theme.scss';
+
+.appTitle {
+  @include main-text;
+  font-size: 1.25rem;
+}

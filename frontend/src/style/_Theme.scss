@@ -1,0 +1,40 @@
+$bg-main: #ffffff;
+
+@mixin main-text {
+  color: #6b6b6b;
+  font-weight: bold;
+}
+
+@mixin secondary-text {
+  color: #6b6b6b;
+  font-size: 0.8rem;
+}
+
+
+$text-danger: #ff5757;
+$text-shadow-danger: 0rem 0rem 0.75rem rgba($text-danger, 0.3);
+@mixin text-danger {
+  color: $text-danger;
+  text-shadow: $text-shadow-danger;
+}
+
+$text-success: #4ef461;
+$text-shadow-success: 0rem 0rem 0.75rem rgba($text-success, 0.3);
+@mixin text-success {
+  color: $text-success;
+  text-shadow: $text-shadow-success;
+}
+
+
+$text-primary: #4e61f4;
+$text-shadow-primary: 0rem 0rem 0.75rem rgba($text-primary, 0.5);
+@mixin text-primary {
+  color: $text-primary;
+  text-shadow: $text-shadow-primary;
+}
+
+
+$shadow-main: 0.5rem 0.5rem 1rem #d9d9d9, -0.5rem -0.5rem 1rem #ffffff;
+$shadow-main-inset: inset 0.5rem 0.5rem 1rem #d9d9d9, inset -0.5rem -0.5rem 1rem #ffffff;
+
+

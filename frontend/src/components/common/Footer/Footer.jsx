@@ -5,7 +5,7 @@ import style from './Footer.module.scss';
 const Footer = () => {
     return (
         <footer>
-            Footer
+            2020
         </footer>
     )
 }

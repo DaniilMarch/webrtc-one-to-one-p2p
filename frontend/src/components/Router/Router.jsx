@@ -8,7 +8,7 @@ import RoomPage from 'pages/RoomPage';
 import RoomSelectPage from 'pages/RoomSelect';
 import NotFoundPage from 'pages/NotFountPage';
 
-import ROUTES from 'constants/Routes';
+import ROUTES from 'components/Router/Routes';
 
 const Router = () => (
     <BrowserRouter>
